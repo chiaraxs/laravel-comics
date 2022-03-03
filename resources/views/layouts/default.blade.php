@@ -46,6 +46,8 @@
         {{-- footer uguale per tutte le pagine --}}
 
     </footer>
+
+    @include('partials.contacts')
     
 
 

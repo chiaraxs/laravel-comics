@@ -12218,7 +12218,7 @@ footer {
 
 footer .footer-left {
   display: flex;
-  padding: 70px;
+  padding: 40px;
   margin-left: 20px;
 }
 
@@ -12254,6 +12254,68 @@ footer .footer-right-logo {
 
 footer .footer-right-logo img {
   margin: -90px 0;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1c1c;
+}
+
+.contacts .sign-up {
+  margin-left: 100px;
+}
+
+.contacts .sign-up button {
+  background-color: #303030;
+  border: none;
+  border: 2px solid #1e86ed;
+  padding: 15px;
+  margin: 20px;
+}
+
+.contacts .sign-up button a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fdf0ff;
+  font-size: 15px;
+}
+
+.contacts .sign-up button:hover {
+  background-color: #1e86ed;
+}
+
+.contacts .icons-zone {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 300px;
+}
+
+.contacts .icons-zone img {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.contacts .icons-zone img:hover {
+  background-color: #fdf0ff;
+  border-radius: 50px 50px;
+}
+
+.contacts .icons-zone span {
+  color: #1e86ed;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+
+.contacts .icons-zone span:hover {
+  border-bottom: 1px solid #1e86ed;
 }
 
 * {
