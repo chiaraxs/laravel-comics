@@ -12208,6 +12208,54 @@ header .header-container .header-navbar ul li:hover {
   border: 1px solid black;
 }
 
+footer {
+  height: 450px;
+  display: flex;
+  background: url("/img/footer-bg.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer .footer-left {
+  display: flex;
+  padding: 70px;
+  margin-left: 20px;
+}
+
+footer .footer-left ul {
+  margin: 0 15px 10px 30px;
+}
+
+footer .footer-left ul li {
+  list-style: none;
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+footer .footer-left ul li h3,
+footer .footer-left ul li .h3 {
+  font-size: 18px;
+  color: #fdf0ff;
+  text-transform: uppercase;
+}
+
+footer .footer-left ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+footer .footer-left ul li a:hover {
+  color: #fdf0ff;
+}
+
+footer .footer-right-logo {
+  margin: 10px 200px;
+}
+
+footer .footer-right-logo img {
+  margin: -90px 0;
+}
+
 * {
   padding: 0;
   margin: 0;

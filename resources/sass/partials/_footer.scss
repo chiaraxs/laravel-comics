@@ -1,0 +1,45 @@
+footer {
+    height: 450px;
+    display: flex;
+    background: url("/img/footer-bg.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    .footer-left {
+        display: flex;
+        padding: 70px;
+        margin-left: 20px;
+
+        ul {
+            margin: 0 15px 10px 30px;
+
+            li {
+                list-style: none;
+                margin-left: 20px;
+                line-height: 30px;
+
+                h3 {
+                    font-size: 18px;
+                    color: #fdf0ff;
+                    text-transform: uppercase;
+                }
+                a {
+                    text-decoration: none;
+                    color: grey;
+
+                    &:hover {
+                        color: #fdf0ff;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-right-logo {
+        margin: 10px 200px;
+
+        img {
+            margin: -90px 0;
+        }
+    }
+}
