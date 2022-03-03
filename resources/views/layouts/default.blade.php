@@ -18,40 +18,44 @@
 </head>
 <body>
 
+    {{-- header uguale per tutte le pagine --}}
     <header>
-        
-        {{-- header uguale x tutte la pagine --}}
         @include('partials.header')
-        {{-- header uguale x tutte la pagine --}}
-
     </header>
+    {{-- /header uguale per tutte le pagine --}}
 
+
+    {{-- jumbo --}}
     <div class="jumbotron">
         @include('partials.jumbo')
     </div>
+    {{-- jumbo --}}
 
 
+    {{-- main --}}
     <main>
         {{-- segnaposto --}}
-        @yield('content')
+        @yield('main')
         {{-- segnaposto --}}
     </main>
+    {{-- /main --}}
 
+    {{-- shop --}}
     @include('partials.shop')
+    {{-- /shop --}}
 
+    {{-- footer uguale per tutte le pagine --}}
     <footer>
-        
-        
-        {{-- footer uguale per tutte le pagine --}}
         @include('partials.footer')
-        {{-- footer uguale per tutte le pagine --}}
-
     </footer>
+    {{-- footer uguale per tutte le pagine --}}
 
+
+    {{-- contacts --}}
     @include('partials.contacts')
+    {{-- /contacts --}}
+
     
-
-
 
 </body>
 </html>

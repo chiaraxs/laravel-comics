@@ -12414,9 +12414,9 @@ main .cards-box .cards img:hover {
   opacity: 50%;
 }
 
-main .cards-box .cards h3,
-main .cards-box .cards .h3 {
-  margin-top: 5px;
+main .cards-box .cards h6,
+main .cards-box .cards .h6 {
+  margin-top: 10px;
 }
 
 main button {

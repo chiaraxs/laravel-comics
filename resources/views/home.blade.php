@@ -7,8 +7,8 @@
 @section('pageTitle', 'Home')
 {{-- /head title in layouts->default --}}
 
-
-@section('content')
+{{-- unica section main che cambia tra le pagine --}}
+@section('main')
    
    <main>
        <div class="current-series">current series</div>
@@ -19,7 +19,7 @@
             @foreach ($data as $comic)
             <div class="cards">
                 <img src="{{$comic['thumb']}}" alt="">
-                <h5>{{$comic['series']}}</h5>
+                <h6>{{$comic['series']}}</h6>
             </div>
             @endforeach
             {{-- foreach --}}
@@ -30,5 +30,7 @@
    </main>
 
 @endsection
+{{-- /unica section main che cambia tra le pagine --}}
+
 
 
