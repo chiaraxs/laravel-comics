@@ -37,6 +37,7 @@
         {{-- segnaposto --}}
     </main>
 
+    @include('partials.shop')
 
     <footer>
         

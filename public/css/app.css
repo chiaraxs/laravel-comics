@@ -12318,6 +12318,48 @@ footer .footer-right-logo img {
   border-bottom: 1px solid #1e86ed;
 }
 
+section {
+  background-color: #1e86ed;
+  text-transform: uppercase;
+}
+
+section .shop-zone {
+  margin: 0px 200px;
+}
+
+section .shop-zone ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+section .shop-zone ul li {
+  display: flex;
+  align-items: center;
+  color: #fdf0ff;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+section .shop-zone ul li img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+section .shop-zone ul li:hover {
+  text-decoration: underline;
+}
+
+section .shop-zone .shop-locator {
+  width: 28px;
+}
+
+section .shop-zone .visa {
+  width: 40px;
+}
+
 * {
   padding: 0;
   margin: 0;

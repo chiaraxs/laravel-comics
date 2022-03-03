@@ -1,0 +1,40 @@
+section{
+    background-color: #1e86ed;
+    text-transform: uppercase;
+    
+    .shop-zone{
+    margin: 0px 200px;
+        
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-transform: uppercase;
+                
+            li{
+                display: flex;
+                align-items: center;
+                color: #fdf0ff;
+                list-style: none;
+                padding: 20px;
+                cursor: pointer;
+                    
+                img{
+                    width: 40px;
+                    margin-right: 15px;
+                }
+                    
+                &:hover{
+                    text-decoration: underline;
+                }
+            } 
+        }
+        
+        .shop-locator{
+            width: 28px;
+        }
+        .visa {
+            width: 40px;
+        }
+    }
+}
