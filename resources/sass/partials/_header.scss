@@ -1,0 +1,33 @@
+header{
+    
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        .logo{
+            margin: 15px 10px;
+        }
+        
+        .header-navbar{
+            
+            ul{
+                display: flex;
+                
+                li {
+                    color: #484646;
+                    padding: 15px;
+                    list-style: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        color:#1e86ed;
+                        border-bottom: 4px solid #1e86ed;
+                    }
+                }
+            }
+        }
+    }
+}

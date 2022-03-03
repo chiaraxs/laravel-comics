@@ -1,4 +1,5 @@
-@extends('layouts.default')
+<footer> questo è il mio footer </footer>
+
 
 
 

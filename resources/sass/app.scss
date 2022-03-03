@@ -1,1 +1,11 @@
 //
+
+// QUI VA IL MIO SCSS -> in automatico, con npm run watch, aggiorna contemporaneamente il mio style css in css/app.css
+
+@import "~bootstrap/scss/bootstrap"; 
+@import "./partials/header";
+@import "./partials/jumbo";
+@import "./partials/footer";
+@import "./partials/common";
+@import "./partials/variables";
+
