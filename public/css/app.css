@@ -12370,3 +12370,68 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  background-color: #1d1c1c;
+  position: relative;
+  text-transform: uppercase;
+  color: #fdf0ff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+main .current-series {
+  position: absolute;
+  margin: -20px 250px;
+  width: 200px;
+  background-color: #1e86ed;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+main .cards-box {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main .cards-box .cards {
+  margin-top: 30px;
+  width: 200px;
+  padding: 10px;
+}
+
+main .cards-box .cards img {
+  width: 100%;
+  cursor: pointer;
+}
+
+main .cards-box .cards img:hover {
+  transition: 0, 5s;
+  transform: scale(1.03);
+  opacity: 50%;
+}
+
+main .cards-box .cards h3,
+main .cards-box .cards .h3 {
+  margin-top: 5px;
+}
+
+main button {
+  background-color: #1e86ed;
+  border: none;
+  padding: 15px 50px;
+  margin: 20px auto;
+  color: #fdf0ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+main button:hover {
+  background-color: #484646;
+}
+

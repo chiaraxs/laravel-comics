@@ -2,7 +2,7 @@
 
 // QUI VA IL MIO SCSS -> in automatico, con npm run watch, aggiorna contemporaneamente il mio style css in css/app.css
 
-@import "~bootstrap/scss/bootstrap"; 
+@import "~bootstrap/scss/bootstrap";
 @import "./partials/header";
 @import "./partials/jumbo";
 @import "./partials/footer";
@@ -11,3 +11,65 @@
 @import "./partials/common";
 @import "./partials/variables";
 
+main {
+    background-color: #1d1c1c;
+    position: relative;
+    text-transform: uppercase;
+    color: #fdf0ff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+
+    .current-series {
+        position: absolute;
+        margin: -20px 250px;
+        width: 200px;
+        background-color: #1e86ed;
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+
+    .cards-box {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .cards {
+            margin-top: 30px;
+            width: 200px;
+            padding: 10px;
+
+            img {
+                width: 100%;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 0, 5s;
+                    transform: scale(1.03);
+                    opacity: 50%;
+                }
+            }
+
+            h3 {
+                margin-top: 5px;
+            }
+        }
+    }
+    button {
+        background-color: #1e86ed;
+        border: none;
+        padding: 15px 50px;
+        margin: 20px auto;
+        color: #fdf0ff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #484646;
+        }
+    }
+}

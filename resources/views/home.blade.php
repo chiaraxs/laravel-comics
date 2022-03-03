@@ -13,15 +13,18 @@
    <main>
        <div class="current-series">current series</div>
 
-        @foreach ($data as $comic)
+        
        <div class="cards-box">
-           <div class="cards">
-               <img src="{{$comic['thumb']}}" alt="">
-               <h3>{{$comic['series']}}</h3>
-           </div>
+            {{-- foreach --}}
+            @foreach ($data as $comic)
+            <div class="cards">
+                <img src="{{$comic['thumb']}}" alt="">
+                <h5>{{$comic['series']}}</h5>
+            </div>
+            @endforeach
+            {{-- foreach --}}
        </div>
-       @endforeach
-
+      
 
        <button>load more</button>
    </main>
