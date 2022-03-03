@@ -9,6 +9,23 @@
 
 
 @section('content')
-    <h1>Qui va il main con le card</h1>
+   
+   <main>
+       <div class="current-series">current series</div>
+
+        @foreach ($data as $comic)
+       <div class="cards-box">
+           <div class="cards">
+               <img src="{{$comic['thumb']}}" alt="">
+               <h3>{{$comic['series']}}</h3>
+           </div>
+       </div>
+       @endforeach
+
+
+       <button>load more</button>
+   </main>
+
 @endsection
+
 
