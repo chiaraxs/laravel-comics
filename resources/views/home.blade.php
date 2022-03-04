@@ -10,24 +10,30 @@
 {{-- unica section main che cambia tra le pagine --}}
 @section('main')
    
-   <main>
-       <div class="current-series">current series</div>
+    <main>
+        {{-- current series --}}
+        <div class="current-series">current series</div>
+        {{-- /current series --}}
 
-        
-       <div class="cards-box">
-            {{-- foreach --}}
+        {{-- cards --}}
+        <div class="cards-box">
+
+            {{-- foreach card  --}}
             @foreach ($data as $comic)
             <div class="cards">
                 <img src="{{$comic['thumb']}}" alt="">
                 <h6>{{$comic['series']}}</h6>
             </div>
             @endforeach
-            {{-- foreach --}}
-       </div>
-      
+            {{-- /foreach card --}}
+            
+        </div>
+        {{-- /cards --}}
 
+        {{-- button --}}
        <button>load more</button>
-   </main>
+       {{-- /button --}}
+    </main>
 
 @endsection
 {{-- /unica section main che cambia tra le pagine --}}

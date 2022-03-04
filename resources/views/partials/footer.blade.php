@@ -1,4 +1,5 @@
 <footer>
+    {{-- footer left --}}
     <div class="footer-left">
 
         <ul>
@@ -14,7 +15,6 @@
             <li><a href="#">News</a></li>
         </ul>
 
-
         <ul>
             <li>
                 <h3>shop</h3>
@@ -22,9 +22,6 @@
             <li><a href="#">Shop DC</a></li>
             <li><a href="#">Shop DC Collectibles</a></li>
         </ul>
-
-
-
 
         <ul>
             <li>
@@ -43,9 +40,6 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
 
-
-
-
         <ul>
             <li>
                 <h3>sites</h3>
@@ -58,10 +52,13 @@
         </ul>
 
     </div>
+    {{-- /footer left --}}
 
+    {{-- footer right --}}
     <div class="footer-right-logo">
         <img src="{{ asset('img/dc-logo-bg.png')}}" alt="">
     </div>
+     {{-- /footer right --}}
 
 </footer>
 

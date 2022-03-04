@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+// rotta che rimanda alla homepage
 Route::get('/', function () {
     $data = config('comics');
     return view('home', compact('data'));
 });
+// /rotta che rimanda alla homepage

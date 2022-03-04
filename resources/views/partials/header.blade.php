@@ -1,9 +1,13 @@
 <header>
-
     <div class="header-container">
+
+        {{-- logo --}}
         <div class="logo">
             <img src="{{ asset('img/dc-logo.png')}}" alt="logo">
         </div>
+        {{-- /logo --}}
+
+        {{-- navbar menu --}}
         <nav class="header-navbar">
             <ul>
                 <li><a href="#"></a>characters</li>
@@ -16,8 +20,8 @@
                 <li><a href="#"></a>fans</li>
                 <li><a href="#"></a>news</li>
                 <li><a href="#"></a>shop</li>
-
             </ul>
         </nav>
+        {{-- /navbar menu --}}
     </div>
 </header>

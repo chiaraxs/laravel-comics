@@ -2,7 +2,7 @@
 
 // QUI VA IL MIO SCSS -> in automatico, con npm run watch, aggiorna contemporaneamente il mio style css in css/app.css
 
-// import style dei partials
+// import style dei partials & bootstrap
 @import "~bootstrap/scss/bootstrap";
 @import "./partials/header";
 @import "./partials/jumbo";
@@ -11,7 +11,7 @@
 @import "./partials/shop";
 @import "./partials/common";
 @import "./partials/variables";
-// /import style dei partials
+// /import style dei partials & bootstrap
 
 // main style in home.blade -> cards
 main {
@@ -60,6 +60,7 @@ main {
             }
         }
     }
+    
     button {
         background-color: #1e86ed;
         border: none;

@@ -8,14 +8,13 @@
 
     {{-- richiamo al mio app.css --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    {{-- richiamo al mio app.css --}}
+    {{-- /richiamo al mio app.css --}}
 
     {{-- richiamo al mio app.js --}}
     <script src="{{ asset('js/app.js')}}"></script>
-    {{-- richiamo al mio app.js --}}
-
-
+    {{-- /richiamo al mio app.js --}}
 </head>
+
 <body>
 
     {{-- header uguale per tutte le pagine --}}
@@ -25,37 +24,42 @@
     {{-- /header uguale per tutte le pagine --}}
 
 
-    {{-- jumbo --}}
+    {{-- jumbo uguale per tutte le pagine --}}
     <div class="jumbotron">
         @include('partials.jumbo')
     </div>
-    {{-- jumbo --}}
+    {{-- /jumbo uguale per tutte le pagine --}}
 
 
-    {{-- main --}}
+    {{-- main - unico elemento che cambia per ogni pagina --}}
     <main>
         {{-- segnaposto --}}
         @yield('main')
         {{-- segnaposto --}}
     </main>
-    {{-- /main --}}
+    {{-- /main - unico elemento che cambia per ogni pagina --}}
 
-    {{-- shop --}}
-    @include('partials.shop')
-    {{-- /shop --}}
+
+    {{-- shop uguale per tutte le pagine --}}
+    <section>
+        @include('partials.shop')
+        {{-- /shop uguale per tutte le pagine --}}
+    </section>
+
 
     {{-- footer uguale per tutte le pagine --}}
     <footer>
         @include('partials.footer')
     </footer>
-    {{-- footer uguale per tutte le pagine --}}
+    {{-- /footer uguale per tutte le pagine --}}
 
 
-    {{-- contacts --}}
-    @include('partials.contacts')
-    {{-- /contacts --}}
+    <section>
+        {{-- contacts uguale per tutte le pagine --}}
+        @include('partials.contacts')
+        {{-- /contacts uguale per tutte le pagine --}}
+    </section>
 
-    
 
 </body>
 </html>
