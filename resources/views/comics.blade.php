@@ -24,6 +24,13 @@
             <img src="{{$comic['thumb']}}" alt="">
             <h6>{{$comic['series']}}</h6>
         </div>
+
+        {{-- link che al click rimanda a comics.details di ciascun comic  --}}
+        <div class="d-flex">
+            <a href="{{ route('comics.details', ["id"=> $loop->index]) }}" class="btn button-details btn-link align-self-center">Details</a>
+        </div>
+        {{-- /link che al click rimanda a comics.details di ciascun comic  --}}
+
         @endforeach
         {{-- /foreach card --}}
 
@@ -33,6 +40,7 @@
     {{-- button --}}
     <button>load more</button>
     {{-- /button --}}
+
 </main>
 
 @endsection

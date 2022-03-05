@@ -85,3 +85,14 @@ main {
         }
     }
 }
+
+.button-details {
+    background-color: #1e86ed;
+    border: none;
+    color: #fdf0ff;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #484646;
+    }
+    }

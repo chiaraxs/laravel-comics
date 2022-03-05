@@ -44,8 +44,8 @@ Route::get('/comics/{id}', function ($id){
 
     $comics = $data[$id];
     return view('comicsDetails', compact('comics'));
-
-});
+    
+})->name('comics.details');
 // /rotta che rimanda a comics.details ->  http://127.0.0.1:8000/comics/4
 
 // se l'utente non inserisce un numero oppure se il numero inserito dall'utente supera il numero di prodotti nel mio array comics 
