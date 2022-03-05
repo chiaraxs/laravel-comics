@@ -13,9 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// rotta che rimanda alla homepage
-Route::get('/', function () {
+Route::view('/characters', 'characters');
+
+// rotta che rimanda a comics
+Route::get('/comics', function () {
     $data = config('comics');
-    return view('home', compact('data'));
+    return view('comics', compact('data'));
 });
-// /rotta che rimanda alla homepage
+// /rotta che rimanda a comics
+
+Route::view('/movies', 'movies');
+Route::view('/tv', 'tv');
+Route::view('/games', 'games');
+Route::view('/collectibles', 'collectibles');
+Route::view('/videos', 'videos');
+Route::view('/fans', 'fans');
+Route::view('/news', 'news');
+Route::view('/shop', 'shop');
+
+

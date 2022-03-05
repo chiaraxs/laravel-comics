@@ -12332,6 +12332,7 @@ section .shop-zone ul {
   justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 section .shop-zone ul li {
