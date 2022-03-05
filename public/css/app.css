@@ -12390,36 +12390,6 @@ main .current-series {
   font-size: 18px;
 }
 
-main .cards-box {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-main .cards-box .cards {
-  margin-top: 30px;
-  width: 200px;
-  padding: 10px;
-}
-
-main .cards-box .cards img {
-  width: 100%;
-  cursor: pointer;
-}
-
-main .cards-box .cards img:hover {
-  transition: 0, 5s;
-  transform: scale(1.03);
-  opacity: 50%;
-}
-
-main .cards-box .cards h6,
-main .cards-box .cards .h6 {
-  margin-top: 10px;
-}
-
 main button {
   background-color: #1e86ed;
   border: none;
@@ -12434,5 +12404,41 @@ main button {
 
 main button:hover {
   background-color: #484646;
+}
+
+.comics-details {
+  background-color: #1d1c1c;
+  color: #fdf0ff;
+  text-align: center;
+}
+
+.cards-box {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cards-box .cards {
+  margin-top: 30px;
+  width: 200px;
+  padding: 10px;
+}
+
+.cards-box .cards img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.cards-box .cards img:hover {
+  transition: 0, 5s;
+  transform: scale(1.03);
+  opacity: 50%;
+}
+
+.cards-box .cards h6,
+.cards-box .cards .h6 {
+  margin-top: 10px;
 }
 

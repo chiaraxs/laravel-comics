@@ -13,7 +13,7 @@
 @import "./partials/variables";
 // /import style dei partials & bootstrap
 
-// main style in home.blade -> cards
+// main style in comics.blade -> cards
 main {
     background-color: #1d1c1c;
     position: relative;
@@ -30,35 +30,6 @@ main {
         background-color: #1e86ed;
         padding: 10px 10px;
         font-size: 18px;
-    }
-
-    .cards-box {
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-        .cards {
-            margin-top: 30px;
-            width: 200px;
-            padding: 10px;
-
-            img {
-                width: 100%;
-                cursor: pointer;
-
-                &:hover {
-                    transition: 0, 5s;
-                    transform: scale(1.03);
-                    opacity: 50%;
-                }
-            }
-
-            h6 {
-                margin-top: 10px;
-            }
-        }
     }
     
     button {
@@ -77,4 +48,40 @@ main {
         }
     }
 }
-// /main style in home.blade -> cards
+// /main style in comics.blade -> cards
+
+// comics-details style in -> http://127.0.0.1:8000/comics/10 (esempio)
+.comics-details{
+    background-color: #1d1c1c;
+    color: #fdf0ff;
+    text-align: center;
+}
+
+.cards-box {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .cards {
+        margin-top: 30px;
+        width: 200px;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                transition: 0, 5s;
+                transform: scale(1.03);
+                opacity: 50%;
+            }
+        }
+
+        h6 {
+            margin-top: 10px;
+        }
+    }
+}

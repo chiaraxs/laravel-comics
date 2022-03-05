@@ -39,6 +39,10 @@
     </main>
     {{-- /main - unico elemento che cambia per ogni pagina --}}
 
+    {{-- segnaposto che rimanda al dettaglio title di ogni comics --}}
+    @yield('comicsDetails')
+    {{-- segnaposto che rimanda al dettaglio title di ogni comics -> esempio http://127.0.0.1:8000/comics/2 --}}
+
 
     {{-- shop uguale per tutte le pagine --}}
     <section>
