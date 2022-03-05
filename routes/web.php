@@ -13,24 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home');
-Route::view('/characters', 'characters');
+// rotte che rimandano al controller HomeController (Home + Navbar)
+Route::get('/', 'HomeController@index');
+Route::get('/characters', 'HomeController@characters');
+Route::get('/movies', 'HomeController@movies');
+Route::get('/tv', 'HomeController@tv');
+Route::get('/games', 'HomeController@games');
+Route::get('/collectibles', 'HomeController@collectibles');
+Route::get('/videos', 'HomeController@videos');
+Route::get('/fans', 'HomeController@fans');
+Route::get('/news', 'HomeController@news');
+Route::get('/shop', 'HomeController@shop');
+// /rotte che rimandano al controller HomeController
 
-// rotta che rimanda a comics
-Route::get('/comics', function () {
-    $data = config('comics');
-    return view('comics', compact('data'));
-});
-// /rotta che rimanda a comics -> http://127.0.0.1:8000/comics
 
-Route::view('/movies', 'movies');
-Route::view('/tv', 'tv');
-Route::view('/games', 'games');
-Route::view('/collectibles', 'collectibles');
-Route::view('/videos', 'videos');
-Route::view('/fans', 'fans');
-Route::view('/news', 'news');
-Route::view('/shop', 'shop');
+// rotta che rimanda al controller che gestisce comics ComicController
+Route::get('/comics', 'ComicController@index');
+// /rotta che rimanda al controller che gestisce comics -> http://127.0.0.1:8000/comics
 
 
 // rotta con parametro dinamico {id} che rimanda a comics.details ->  http://127.0.0.1:8000/comics/4
