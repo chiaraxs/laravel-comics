@@ -21,16 +21,17 @@
         {{-- foreach card  --}}
         @foreach ($data as $comic)
         <div class="cards">
-            <img src="{{$comic['thumb']}}" alt="">
-            <h6>{{$comic['series']}}</h6>
+        
+        {{-- link che al click su img rimanda a comics.details di ciascun comic  --}}
+        <a href="{{ route('comics.details', ["id"=> $loop->index])}}">
+            <img src="{{$comic['thumb']}}" alt="" />
+        </a>
+        {{-- /link che al click su img rimanda a comics.details di ciascun comic  --}}
+
+        <h6>{{$comic['series']}}</h6>
         </div>
 
-        {{-- link che al click rimanda a comics.details di ciascun comic  --}}
-        <div class="d-flex">
-            <a href="{{ route('comics.details', ["id"=> $loop->index]) }}" class="btn button-details btn-link align-self-center">Details</a>
-        </div>
-        {{-- /link che al click rimanda a comics.details di ciascun comic  --}}
-
+        
         @endforeach
         {{-- /foreach card --}}
 
@@ -44,4 +45,4 @@
 </main>
 
 @endsection
-{{-- /unica section main che cambia tra le pagine --}}
+

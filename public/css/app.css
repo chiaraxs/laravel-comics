@@ -12442,14 +12442,3 @@ main button:hover {
   margin-top: 10px;
 }
 
-.button-details {
-  background-color: #1e86ed;
-  border: none;
-  color: #fdf0ff;
-  cursor: pointer;
-}
-
-.button-details:hover {
-  background-color: #484646;
-}
-
